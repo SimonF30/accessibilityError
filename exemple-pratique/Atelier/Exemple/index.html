@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../ressources/boosted/css/boosted.min.css" />
+		<link href="styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+        <header>
+            <nav id="mainNav" class="navbar navbar-dark">
+                <div class="container">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-toggleable-xs" id="bs-example-navbar-collapse-1">
+                        <a class="navbar-brand" href="#">
+                            <img id="orange_logo" src="../../ressources/boosted/img/ORANGE_LOGO_rgb.jpg"/>
+                        </a>
+						<ul class="nav navbar-nav collapse navbar-toggleable-xs pull-xs-left" id="collapsingNavbar">
+							  <li class="nav-item"><a class="nav-link active" href="./web/index.html">Site Web</a></li>
+							  <li class="nav-item mobile"><div class="btn-group mr-2"><a role="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+									Application mobile
+									<span class="sr-only">sous-menu</span>
+								</a>
+							<ul class="dropdown-menu" role="menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 40px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+								<li><a class="dropdown-item" href="#">IOs</a></li>
+								<li><a class="dropdown-item" href="#">Android</a></li>
+								<li><a class="dropdown-item" href="#">Autre</a></li>
+								<li class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Separated link</a></li>
+						</ul></div></li>
+							  <li class="nav-item"><a href="../others/index.html" class="nav-link">Contenu éditorial</a></li>
+						</ul>
+						<ul class="nav navbar-nav pull-xs-right" id="secondNavBar">
+							<li class="nav-item hidden-xs-down">
+							  <span id="cdu">
+								<span onclick="location.href='http://confort-plus.orange.com/'" class="nav-link" target="_blank" >
+								  Découvrir Confort
+								  <span>+</span>
+								</span>
+							  </span>
+							</li>
+							<li class="nav-item language hidden-xs-down"><a href="#" class="nav-link active" aria-disabled="true" aria-label="version française">fr</a></li>
+							<li class="nav-item language hidden-xs-down"><a aria-label="english version" href="../web_EN/index.html" class="nav-link" lang="en">en</a></li>
+						</ul>
+
+						</div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+		    </nav>
+		</header>
+
+	    <main id="content" class="container">
+            <div>
+                <div class="row">
+                    <div class="col-xs-12">
+						<h1>Démo accessibilité</h1>
+                        <div class="titre1">Pourquoi l'accessibilité numérique ?</div>
+                        	<p>
+ 								<img src="../../ressources/images/chevron.gif" alt="puce" class="puce"> <span class="list">Parce qu’elle bénéficie à <strong>80 millions</strong> de personnes handicapées ou <a class="info" href="#" target="_blank"><strong>séniors</strong></strong><span>nouvelle fenêtre</span></a> en Europe.<br/>
+ 								<img src="../../ressources/images/chevron.gif" alt="puce" class="puce"> <span class="list">Parce que nous passons en moyenne <strong>8 ans</strong> de notre vie en situation de handicap.</span><br/>
+ 								<img src="../../ressources/images/chevron.gif" alt="puce" class="puce"> <span class="list">Mais aussi et surtout parce qu’un produit accessible est plus <strong>facile à utiliser</strong> et que cela bénéficie à tous !</span><br/>
+                            </p>
+                    </div>
+                </div><!-- .row -->
+
+
+
+				<div class="titre1">L’accessibilité est au cœur d’Orange</div>
+                <div class="row">
+
+                	<table><tr>
+                		<td>
+                			<div class="thumbnail blue">
+								<p class="titre2">Essentiels 2020</p>
+								<img class="img-thumbnail" src="../../ressources/images/ESSENTIELS2020.jpg" />
+								<p><q>Pour être positive, la révolution digitale doit être partagée par tous et adaptée à chacun</q></p>
+								<a class='btn btn-default' href="#">en savoir +</a>
+							</div>
+						</td>
+                		<td>
+                			<div class="thumbnail black">
+								<p class="titre2">RSE</p>
+								<img class="img-thumbnail" src="../../ressources/images/rse.png"/>
+								<p>Notre engagement responsable Faire du numérique un accélérateur de progrès pour tous</q></p>
+								<a class='btn btn-default' href="#">en savoir +</a>
+							</div>
+                		</td>
+                		<td>
+                			<div class="thumbnail yellow">
+								<p class="titre2">nos valeurs</p>
+								<img class="img-thumbnail" src="../../ressources/images/12345.png"/>
+								<p>proximité : nos réponses sont adaptées aux besoins de chacun.</p>
+								<a class='btn btn-default' href="#">en savoir +</a>
+							</div>
+                		</td>
+                	</tr></table>
+
+                </div><!-- .row -->
+				
+				<div class="titre1">Bon plan du moment</div>
+				 <div class="row">
+					<div class="col-md-8"  style="height:350px;">
+						<input type="image" id="promo" alt="Promo" src="../../ressources/images/sony-xperia.png" class="img-thumbnail" onclick="window.location.assign('https://a11y-guidelines.orange.com/fr/')"/>
+					</div>
+					<div class="col-md-4" style="height:350px;">
+					<p><b>Connectez-vous à votre espace afin de bénéficier de nos meilleures offres.</b></p>
+					<form novalidate="novalidate" id="formulaire">
+						<div id="errors" role="alert" aria-atomic="true"><p id="error"></p></div>
+							<div class="form-group">
+								  <span>Adresse mail</span>
+									<input name="credential" class="form-control" id="credential" type="text" autocomplete="e-mail">
+							</div>
+							<div class="form-group">
+								  <span>mot de passe </span>
+								  <input id="password" class="form-control" type="text">
+							</div>
+
+							<div class="form-group">
+								<div>
+									<input name="memorize-login" id="id-memorize-login" checked="" type="checkbox">
+									<label for="id-memorize-login">mémoriser l’adresse mail ou le nº de mobile </label>
+								</div>
+								<div>
+									<input name="memorize-password" id="id-memorize-password" checked="" type="checkbox">
+									<label for="id-memorize-password">rester connecter</label>
+								</div>
+							</div>
+							<button id="envoyer" type="submit" class="btn btn-default" aria-label="se connecter à son compte client">Envoyer</button>
+						</form>
+
+
+					</div>
+                </div><!-- .row -->
+
+
+					<div class="titre1">Baromètre Accessibilité en 2018</div>
+						<table class="table">
+							<tr>
+								<td><b>Critères des sites web</b></td>
+								<td><b>En 2017</b></td>
+								<td><b> 2018</b></td>
+							</tr>
+							<tr>
+								<td>Disposant d’une page ou d’une rubrique « accessibilité » ou « politique d’accessibilité</td>
+								<td>15%</td>
+								<td>20%</td>
+							</tr>
+							<tr>
+								<td>Affichant une attestation ou une déclaration de conformité (obligatoire) sur une page dédiée<br/>ou incluse dans une autre page (« aide », « politique d’accessibilité », « mentions légales »…)</td>
+								<td>non évalué</td>
+								<td>12%</td>
+							</tr>
+							<tr>
+								<td>Affichant un label accessibilité</td>
+								<td>3%</td>
+								<td>8%</td>
+							</tr>
+						<table>
+						Résultats calculés sur un échantillon de 50 sites web.
+
+
+            </div>
+	    </main><!--/.container-->
+	<footer class="" id="content" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="o-footer col-12">
+          <h1 class="sr-only">footer - site map &amp; informations</h1>
+          <div class="container o-footer-top">
+            <div class="row">
+              <div class="col-12">
+                <ul class="navbar-nav">
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#"><span class="icon-location-pin-compass" aria-hidden="true"></span>Locate a store</a></li>
+                  <li><a href="#">Coverage map</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Child protection</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="o-footer-bottom">
+            <ul>
+              <li>© Orange 2015</li>
+              <li><a href="#">Natus error sit</a></li>
+              <li><a href="#">Voluptatem</a></li>
+              <li><a href="#">Totam rem aperiam</a></li>
+              <li><a href="#">Unde omnis istea</a></li>
+              <li><a href="#">Natus error sit</a></li>
+              <li><a href="#">Voluptatem</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+    <!-- Placed at the end of the document so the pages load faster -->
+<!-- JavaScript keeps returning focus to a field until a user enters data correctly -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ressources/jquery.min.js"></script>   <script>
+			$(document).ready(function(e) {
+				$('#formulaire').submit(function() {
+					$('#errors').html('');
+					if ($('#credential').val() === '' || !ValidateEmail($('#credential').val()))  {
+						$('#errors').append('<p class="error">Erreur avec l\'adresse mail</p>');
+					}
+					if ($('#password').val() === '') {
+						$('#errors').append('<p class="error">SVP, entrer votre mot de passe.</p>');
+					}
+					return false;
+				});
+				
+				function ValidateEmail(mail) 
+				{
+				 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+				  {
+					return (true)
+				  }
+					
+					return (false)
+				}
+			});
+			</script>
+
+    <!-- Include all compiled plugins bootstrap, bootstrap accessibility plugin and boosted specific components (below), or include individual files as needed -->
+    <script src="../../ressources/boosted/js/boosted.js"></script>
+
+	</body>
+</html>
